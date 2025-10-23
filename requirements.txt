@@ -1,0 +1,5 @@
+mss
+Pillow
+openai
+python-dotenv
+PySide6
