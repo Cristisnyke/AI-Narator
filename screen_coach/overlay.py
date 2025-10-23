@@ -10,8 +10,7 @@ class OverlayWindow(QWidget):
     """Simple always-on-top overlay to present textual updates."""
 
     def __init__(self) -> None:
-        super().__init__()
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)
+        super().__init__(flags=Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.setWindowFlag(Qt.WindowDoesNotAcceptFocus)
         self.setWindowTitle("Screen Coach")
